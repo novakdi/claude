@@ -1,0 +1,65 @@
+{
+  "description": "Log of papers already sent to the user in literature digests for the pediatric AML/MDS bone marrow microenvironment / CODEX project. Before compiling a new digest, exclude any pmid or doi already listed here. After sending a new digest, append its papers to this file.",
+  "papers": [
+    {
+      "pmid": "41256395",
+      "doi": "10.1101/2025.09.27.678113",
+      "title": "High-Dimensional Spatiotemporal Single-Cell and 3D Atlas of the Bone Marrow Microenvironment during Leukemic Progression",
+      "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "41270905",
+      "doi": "10.1016/j.labinv.2025.104262",
+      "title": "Comparative Evaluation of Antibody-Oligonucleotide Conjugation Strategies for Multiplexed Imaging Applications",
+      "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "42592214",
+      "doi": "10.3389/fimmu.2026.1904684",
+      "title": "Deciphering Immunosuppressive Niches by Spatial Single-Cell Proteomics: Spatial Interaction Networks and Translational Opportunities",
+      "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "41567197",
+      "doi": "10.3389/fimmu.2025.1742654",
+      "title": "Roles of Immunosuppressive Myeloid States in Colorectal Cancer Checkpoint Inhibitor Non-Response: Single-Cell and Spatial Proteomics, and Reprogramming Approaches",
+      "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "42717353",
+      "doi": "10.1186/s12967-026-08835-2",
+      "title": "Tet2 Deficiency Drives Age-Related Heterogeneous Progression of Myeloid Neoplasms through Epigenetic-Immune Microenvironment Imbalance",
+      "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "42330053",
+      "doi": "10.1080/15384047.2026.2692184",
+      "title": "CD69 Blockade Restores the Bone Marrow Niche and Delays Leukemogenesis in a Mouse Model of TET2-Driven Chronic Myelomonocytic Leukemia",
+      "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "41905408",
+      "doi": "10.1016/j.jconrel.2026.114874",
+      "title": "Baiting-Enhanced Extravasation of Lipid Nanoparticles for Targeted Co-Delivery of Decitabine and siTNF-α to the Bone Marrow Niche in Leukemia Therapy",
+      "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "41961479",
+      "doi": "10.1096/fj.202503832RR",
+      "title": "Active Rac1-Mediated Bone Marrow Retention Enhances CD33 CAR-T Cell Efficacy Against CD33+ Leukemia Cells",
+      "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "42185691",
+      "doi": "10.1007/s44313-026-00141-6",
+      "title": "The Role of Impaired Bone Marrow Tregs in Hematopoietic Stem Cell Depletion for Pediatric Aplastic Anemia Probably Involves Immune Privilege",
+      "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "41514053",
+      "doi": "10.1038/s43018-025-01072-4",
+      "title": "A Single-Cell Atlas Characterizes Dysregulation of the Bone Marrow Immune Microenvironment Associated with Outcomes in Multiple Myeloma",
+      "sent_date": "2026-09-28"
+    }
+  ]
+}
