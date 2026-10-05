@@ -60,6 +60,54 @@
       "doi": "10.1038/s43018-025-01072-4",
       "title": "A Single-Cell Atlas Characterizes Dysregulation of the Bone Marrow Immune Microenvironment Associated with Outcomes in Multiple Myeloma",
       "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "42239259",
+      "doi": "10.64898/2026.05.15.725421",
+      "title": "Niche-level immune evasion in TP53-mutant AML residual disease revealed by spatial proteomics",
+      "sent_date": "2026-10-05"
+    },
+    {
+      "pmid": "41874448",
+      "doi": "10.1158/2159-8290.CD-25-0775",
+      "title": "Same-Slide Spatial Multiomics Integration with IN-DEPTH Reveals Tumor Virus-Linked Spatial Reorganization of the Tumor Microenvironment",
+      "sent_date": "2026-10-05"
+    },
+    {
+      "pmid": "42271039",
+      "doi": "10.1038/s41375-026-02994-3",
+      "title": "Loss of systemic anti-viral immunity and LMP1-driven suppressive myeloid tumour niches converge to shape the immunobiology of Epstein-Barr virus-positive diffuse large B-cell lymphoma",
+      "sent_date": "2026-10-05"
+    },
+    {
+      "pmid": "42637517",
+      "doi": "10.26508/lsa.202603746",
+      "title": "Single-cell chromatin profiling reveals relapse-related priming in pediatric acute myeloid leukemia",
+      "sent_date": "2026-10-05"
+    },
+    {
+      "pmid": "42830144",
+      "doi": "10.1016/j.canlet.2026.218866",
+      "title": "Reactive oxygen species define leukemia stem cell identity in pediatric acute myeloid leukemia",
+      "sent_date": "2026-10-05"
+    },
+    {
+      "pmid": "42233403",
+      "doi": "10.1182/blood.2025032588",
+      "title": "Therapeutic targeting of IL-17A-driven PTGS2/NLRP3 inflammasome activation in juvenile myelomonocytic leukemia",
+      "sent_date": "2026-10-05"
+    },
+    {
+      "pmid": "42360909",
+      "doi": "10.1182/blood.2026033125",
+      "title": "FGF18 mediates fibroblast-leukemia cross talk to promote acute myeloid leukemia progression",
+      "sent_date": "2026-10-05"
+    },
+    {
+      "pmid": "42657369",
+      "doi": "10.1515/jtim-2026-0048",
+      "title": "Bone marrow mesenchymal stem cells are functionally remodeled after complete remission of acute myeloid leukemia",
+      "sent_date": "2026-10-05"
     }
   ]
 }
