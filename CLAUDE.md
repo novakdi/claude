@@ -7,3 +7,5 @@ This repo backs a recurring literature-search task for a PhD project on the bone
 **Before compiling a new digest:** read this file and exclude any paper whose `pmid` or `doi` already appears in it, even if it would otherwise match the search criteria. Do not resend or re-summarize a paper already listed.
 
 **After sending a new digest:** append every paper included in that digest to the `papers` array in `literature-digest/sent-papers.json` (same shape: `pmid`, `doi`, `title`, `sent_date`), and commit/push the update so the next run sees it.
+
+**Digest presentation:** always also produce a nicely designed HTML view of each new digest (`literature-digest/digest-YYYY-MM-DD.html`, same content as the markdown digest, with topic filter, relevance dots, PubMed/DOI links, light/dark themes) and publish it as an Artifact so the user gets a link.
