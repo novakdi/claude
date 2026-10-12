@@ -60,6 +60,60 @@
       "doi": "10.1038/s43018-025-01072-4",
       "title": "A Single-Cell Atlas Characterizes Dysregulation of the Bone Marrow Immune Microenvironment Associated with Outcomes in Multiple Myeloma",
       "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "42380663",
+      "doi": "10.1038/s41375-026-03029-7",
+      "title": "Spatial remodeling of bone marrow architecture defines tissue-state signatures of disease activity and therapeutic response in myelodysplastic neoplasms",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42239259",
+      "doi": "10.64898/2026.05.15.725421",
+      "title": "Niche-level immune evasion in TP53-mutant AML residual disease revealed by spatial proteomics",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42855473",
+      "doi": "10.1038/s41375-026-03164-1",
+      "title": "Mitochondria transfer via tunneling nanotubes drives macrophage immunosuppression and metabolic reprogramming in pediatric AML",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42122217",
+      "doi": "10.3390/cancers18091423",
+      "title": "A Three-Gene Interferon Signature Predicts Sustained Complete Remission in Pediatric AML Patients",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42830144",
+      "doi": "10.1016/j.canlet.2026.218866",
+      "title": "Reactive oxygen species define leukemia stem cell identity in pediatric acute myeloid leukemia",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42836918",
+      "doi": "10.1186/s40348-026-00264-x",
+      "title": "Menin inhibition in pediatric UBTF-TD myelodysplastic syndrome: molecular rationale and clinical observation",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42816584",
+      "doi": "10.1038/s41590-026-02668-3",
+      "title": "Prefibrotic bone marrow microenvironment is a hallmark of clonal hematopoiesis",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42360909",
+      "doi": "10.1182/blood.2026033125",
+      "title": "FGF18 mediates fibroblast-leukemia cross talk to promote acute myeloid leukemia progression",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42847991",
+      "doi": "10.1172/jci.insight.199771",
+      "title": "Latexin deletion in the bone marrow niche suppresses leukemia via LIFR downregulation and immune activation",
+      "sent_date": "2026-10-12"
     }
   ]
 }
