@@ -60,6 +60,54 @@
       "doi": "10.1038/s43018-025-01072-4",
       "title": "A Single-Cell Atlas Characterizes Dysregulation of the Bone Marrow Immune Microenvironment Associated with Outcomes in Multiple Myeloma",
       "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "42830144",
+      "doi": "10.1016/j.canlet.2026.218866",
+      "title": "Reactive oxygen species define leukemia stem cell identity in pediatric acute myeloid leukemia",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42871763",
+      "doi": "10.1002/hem3.70498",
+      "title": "Immune and cellular determinants of response to HMA-venetoclax regimens in acute myeloid leukemia",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42847991",
+      "doi": "10.1172/jci.insight.199771",
+      "title": "Latexin deletion in the bone marrow niche suppresses leukemia via LIFR downregulation and immune activation",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42856304",
+      "doi": "10.64898/2026.09.30.755147",
+      "title": "Clonally Expanded CD8 T Cells in AML Adopt an NK-Like Program Distinct from Canonical Exhaustion",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42883947",
+      "doi": "10.3390/ijms27198703",
+      "title": "Inflammatory Network Remodeling in AML Is Driven by Neutrophil-Centric Self-Amplifying Circuits",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42882852",
+      "doi": "10.3390/cancers18193158",
+      "title": "Single-Cell and Multi-Omics Profiling of the Multiple Myeloma Immune Niche: From Bone Marrow Architecture and Metabolic Reprogramming to Immunotherapy Response",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42876702",
+      "doi": "10.3389/fimmu.2026.1946638",
+      "title": "T cells form distinct spatially restricted immune responses in synovium of patients with psoriasis arthritis and rheumatoid arthritis",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42782774",
+      "doi": "10.3390/cells15181674",
+      "title": "Targeting TGFBR1 with the Investigational Inhibitor TP-6379 Improves Hematopoiesis in Low-Risk MDS Ex Vivo",
+      "sent_date": "2026-10-19"
     }
   ]
 }
