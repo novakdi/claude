@@ -60,6 +60,54 @@
       "doi": "10.1038/s43018-025-01072-4",
       "title": "A Single-Cell Atlas Characterizes Dysregulation of the Bone Marrow Immune Microenvironment Associated with Outcomes in Multiple Myeloma",
       "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "42239259",
+      "doi": "10.64898/2026.05.15.725421",
+      "title": "Niche-level immune evasion in mutant AML residual disease revealed by spatial proteomics",
+      "sent_date": "2026-10-26"
+    },
+    {
+      "pmid": "42855473",
+      "doi": "10.1038/s41375-026-03164-1",
+      "title": "Mitochondria transfer via tunneling nanotubes drives macrophage immunosuppression and metabolic reprogramming in pediatric AML",
+      "sent_date": "2026-10-26"
+    },
+    {
+      "pmid": "42830144",
+      "doi": "10.1016/j.canlet.2026.218866",
+      "title": "Reactive oxygen species define leukemia stem cell identity in pediatric acute myeloid leukemia",
+      "sent_date": "2026-10-26"
+    },
+    {
+      "pmid": "42847991",
+      "doi": "10.1172/jci.insight.199771",
+      "title": "Latexin deletion in the bone marrow niche suppresses leukemia via LIFR downregulation and immune activation",
+      "sent_date": "2026-10-26"
+    },
+    {
+      "pmid": "42657369",
+      "doi": "10.1515/jtim-2026-0048",
+      "title": "Bone marrow mesenchymal stem cells are functionally remodeled after complete remission of acute myeloid leukemia",
+      "sent_date": "2026-10-26"
+    },
+    {
+      "pmid": "42439614",
+      "doi": "10.3390/cells15131137",
+      "title": "Inflammatory Signatures in MDS: The Missing Link Between Genetics, Microenvironment, and Therapy",
+      "sent_date": "2026-10-26"
+    },
+    {
+      "pmid": "42084223",
+      "doi": "10.1158/0008-5472.CAN-25-3699",
+      "title": "CellFuse Enables Multimodal Integration of Single-Cell and Spatial Proteomics Data for Systems-Level Analysis in Cancer",
+      "sent_date": "2026-10-26"
+    },
+    {
+      "pmid": "42882852",
+      "doi": "10.3390/cancers18193158",
+      "title": "Single-Cell and Multi-Omics Profiling of the Multiple Myeloma Immune Niche: From Bone Marrow Architecture and Metabolic Reprogramming to Immunotherapy Response",
+      "sent_date": "2026-10-26"
     }
   ]
 }
