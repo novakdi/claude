@@ -60,6 +60,42 @@
       "doi": "10.1038/s43018-025-01072-4",
       "title": "A Single-Cell Atlas Characterizes Dysregulation of the Bone Marrow Immune Microenvironment Associated with Outcomes in Multiple Myeloma",
       "sent_date": "2026-09-28"
+    },
+    {
+      "pmid": "42855473",
+      "doi": "10.1038/s41375-026-03164-1",
+      "title": "Mitochondria transfer via tunneling nanotubes drives macrophage immunosuppression and metabolic reprogramming in pediatric AML",
+      "sent_date": "2026-11-02"
+    },
+    {
+      "pmid": "42957737",
+      "doi": "10.1038/s41467-026-78283-5",
+      "title": "Characterization of chemoresistant cell populations improves risk stratification and therapy prediction in pediatric acute myeloid leukemia",
+      "sent_date": "2026-11-02"
+    },
+    {
+      "pmid": "42830144",
+      "doi": "10.1016/j.canlet.2026.218866",
+      "title": "Reactive oxygen species define leukemia stem cell identity in pediatric acute myeloid leukemia",
+      "sent_date": "2026-11-02"
+    },
+    {
+      "pmid": "42847991",
+      "doi": "10.1172/jci.insight.199771",
+      "title": "Latexin deletion in the bone marrow niche suppresses leukemia via LIFR downregulation and immune activation",
+      "sent_date": "2026-11-02"
+    },
+    {
+      "pmid": "42848511",
+      "doi": "10.1016/j.celrep.2026.118083",
+      "title": "Sorafenib enhances graft-versus-leukemia activity through IL-18-mediated macrophage and NK cell crosstalk in FLT3-ITD acute myeloid leukemia",
+      "sent_date": "2026-11-02"
+    },
+    {
+      "pmid": "42895851",
+      "doi": "10.1016/j.celrep.2026.118157",
+      "title": "RUNX1-ETO oncoprotein levels determine the balance between endothelial reprogramming and pre-leukemic growth in a human ES cell model of AML",
+      "sent_date": "2026-11-02"
     }
   ]
 }
