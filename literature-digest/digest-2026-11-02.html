@@ -1,0 +1,82 @@
+<title>Marrow Digest 2 Nov</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+<style>
+/* Layout: masthead + filter chips + single reading column of paper cards; slide-stain palette (hematoxylin / eosin) */
+:root{
+  --bg:#f3f3f7; --surface:#ffffff; --fg:#1d1b2b; --muted:#5d5a72; --line:#dcdbe6;
+  --hema:#4a3f8f; --hema-soft:#e8e5f6; --eosin:#b83a6e; --eosin-soft:#f8e4ec; --ok:#1f7a5a;
+  --serif:"Source Serif 4",Georgia,serif; --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14131d; --surface:#1d1c2a; --fg:#ecebf5; --muted:#a6a3bd; --line:#34324a;
+  --hema:#a99cf0; --hema-soft:#2c2850; --eosin:#f08ab3; --eosin-soft:#44212f; --ok:#5fd0a5; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#14131d; --surface:#1d1c2a; --fg:#ecebf5; --muted:#a6a3bd; --line:#34324a;
+  --hema:#a99cf0; --hema-soft:#2c2850; --eosin:#f08ab3; --eosin-soft:#44212f; --ok:#5fd0a5; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.6;padding-inline:16px;padding-block:32px 64px}
+.wrap{max-width:820px;margin-inline:auto;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:10px;border-bottom:2px solid var(--hema);padding-bottom:20px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--eosin)}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,6vw,44px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{color:var(--muted);margin:0;max-width:65ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 13px var(--sans);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--hema);border-color:var(--hema);color:var(--surface)}
+.chip:focus-visible,a:focus-visible{outline:2px solid var(--eosin);outline-offset:2px}
+.group{display:flex;flex-direction:column;gap:14px}
+.group h2{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:500}
+article{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.tag{background:var(--hema-soft);color:var(--hema);padding:2px 8px;border-radius:3px;font-weight:500}
+.tag.pre{background:var(--eosin-soft);color:var(--eosin)}
+.rel{display:inline-flex;gap:3px;align-items:center}
+.rel i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.rel i.on{background:var(--eosin)}
+h3{font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.25;margin:0;text-wrap:balance}
+.sum{margin:0;max-width:65ch}
+h4{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--hema);margin:0 0 6px;font-weight:500}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:5px;max-width:65ch}
+li::marker{color:var(--eosin)}
+.why{background:var(--hema-soft);border-radius:4px;padding:10px 12px;font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--mono);font-size:12px}
+a{color:var(--hema)}
+footer{color:var(--muted);font-size:12px;font-family:var(--mono)}
+@media(max-width:480px){article{padding:16px}}
+</style>
+<div class="wrap">
+<header>
+  <div class="kicker" id="kick">Digest · 2 Nov 2026</div>
+  <h1>Marrow Digest</h1>
+  <p class="lede">Six papers on pediatric AML risk and macrophages, stem cells, mouse niche work and the role of the marrow immune environment after transplant.</p>
+  <div class="chips" id="chips" role="group" aria-label="Filter by topic"></div>
+</header>
+<main id="main" class="wrap" style="gap:28px"></main>
+<footer>PubMed, entries up to the digest date. Preprints are not peer reviewed.</footer>
+</div>
+<script>
+const G={"p": "Pediatric AML, MDS and JMML", "n": "AML microenvironment and mouse models"};
+const P=[{"j": "Leukemia · Oct 2026", "t": "Mitochondria transfer via tunneling nanotubes drives macrophage immunosuppression and metabolic reprogramming in pediatric AML", "rel": 5, "tag": "Original research", "sum": "Princess Máxima Center study of how pediatric AML cells reprogram macrophages in the marrow.", "f": ["Immunosuppressive macrophages dominate the pediatric AML microenvironment (RUNX1::RUNX1T1, KMT2A-rearranged).", "AML cells switch macrophages to an anti-inflammatory state (NF-κB suppression) by direct contact and tunneling-nanotube transfer of mitochondria, rewiring OXPHOS.", "Reprogrammed macrophages show impaired phagocytosis, chemoresistance, and reduced T-cell and bispecific-antibody killing."], "why": "A pediatric AML niche mechanism involving macrophages, which a CODEX panel could look for in situ.", "doi": "10.1038/s41375-026-03164-1", "pmid": "42855473", "g": "p"}, {"j": "Nature Communications · Oct 2026", "t": "Characterization of chemoresistant cell populations improves risk stratification and therapy prediction in pediatric AML", "rel": 5, "tag": "Original research", "sum": "Single-cell transcriptomes of paired diagnosis and relapse samples were used to infer chemoresistant populations, then combined with cytogenetics and MRD after induction.", "f": ["Nearly 40% of pediatric AML patients relapse and die.", "The combined approach finds a group of 20% of patients not transplanted in first remission, with 5-year event-free survival below 40% and almost half of the deaths.", "Chemoresistant populations show therapeutic vulnerabilities for high-risk disease."], "why": "Pediatric AML with outcome-linked single-cell data and better risk groups, the same kind of link you want from spatial data.", "doi": "10.1038/s41467-026-78283-5", "pmid": "42957737", "g": "p"}, {"j": "Cancer Letters · Oct 2026", "t": "Reactive oxygen species define leukemia stem cell identity in pediatric AML", "rel": 4, "tag": "Original research", "sum": "Pediatric AML cells were sorted by ROS level and tested for stemness, niche behavior and metabolism, including in mice and a 3D niche model.", "f": ["ROS-low cells are quiescent, form colonies serially and engraft in mice.", "In the 3D niche model they settle in hypoxic regions and resist cytarabine.", "Low oxidative phosphorylation, yet they depend on complex I.", "A ROS-low gene signature finds stem cells in scRNA-seq data and is prognostic."], "why": "Links stem cell state to hypoxic niche location in children.", "doi": "10.1016/j.canlet.2026.218866", "pmid": "42830144", "g": "p"}, {"j": "JCI Insight · Oct 2026", "t": "Latexin deletion in the bone marrow niche suppresses leukemia via LIFR downregulation and immune activation", "rel": 3, "tag": "Original research", "sum": "MLL-AF9 AML transplanted into Lxn-knockout recipient mice, with stromal scRNA-seq.", "f": ["Lxn-knockout recipients live longer and have fewer LSCs and blasts.", "Lower LIFR signaling in MSCs raises Cxcl9 and recruits more cytotoxic CD8 T cells.", "Adding anti-PD-1 prolongs survival further."], "why": "A good template for niche-focused murine validation, which is your aim 3.", "doi": "10.1172/jci.insight.199771", "pmid": "42847991", "g": "n"}, {"j": "Cell Reports · Sep 2026", "t": "Sorafenib enhances graft-versus-leukemia activity through IL-18-mediated macrophage and NK cell crosstalk in FLT3-ITD AML", "rel": 3, "tag": "Original research", "sum": "scRNA-seq of the marrow immune microenvironment in FLT3-ITD AML patients receiving sorafenib after allogeneic transplant, with mouse experiments.", "f": ["Sorafenib promotes macrophage to NK cell crosstalk through IL-18, raising NK cytotoxicity and graft-versus-leukemia effect.", "It inhibits mitochondrial complexes I and V, which raises IL-18 production (PKM2–RelA) and release through caspase-3/GSDME pyroptosis in macrophages."], "why": "Drug effect on the marrow immune niche, with macrophage and NK cell interaction.", "doi": "10.1016/j.celrep.2026.118083", "pmid": "42848511", "g": "n"}, {"j": "Cell Reports · Oct 2026", "t": "RUNX1-ETO oncoprotein levels determine the balance between endothelial reprogramming and pre-leukemic growth in a human ES cell model of AML", "rel": 3, "tag": "Original research", "sum": "Human embryonic stem cell line with inducible RUNX1-ETO, analyzed by single-cell methods.", "f": ["RUNX1-ETO reprograms ESC-derived myeloid progenitors toward endothelial cells, depending on its level and irreversibly.", "A subpopulation of blood progenitors escapes reprogramming and keeps proliferating when co-cultured with endothelial cells.", "Cell-cell interactions maintain pre-leukemic cells."], "why": "t(8;21) is common in children, and this shows how endothelial interactions support pre-leukemic cells.", "doi": "10.1016/j.celrep.2026.118157", "pmid": "42895851", "g": "n"}];
+const main=document.getElementById('main'),chips=document.getElementById('chips');
+let cur='all';
+function render(){
+  main.innerHTML='';
+  for(const k of Object.keys(G)){
+    if(cur!=='all'&&cur!==k)continue;
+    const items=P.filter(p=>p.g===k); if(!items.length)continue;
+    const sec=document.createElement('section');sec.className='group';
+    sec.innerHTML='<h2>'+G[k]+' ('+items.length+')</h2>';
+    for(const p of items){
+      const a=document.createElement('article');
+      a.innerHTML='<div class="meta"><span class="tag'+(p.pre?' pre':'')+'">'+p.tag+'</span><span>'+p.j+'</span><span class="rel" title="Relevance to your project: '+p.rel+' of 5" aria-label="Relevance '+p.rel+' of 5">'+[1,2,3,4,5].map(i=>'<i class="'+(i<=p.rel?'on':'')+'"></i>').join('')+'</span></div>'+
+      '<h3>'+p.t+'</h3><p class="sum">'+p.sum+'</p><div><h4>Main findings</h4><ul>'+p.f.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>'+
+      '<div class="why"><strong>Why it matters for you:</strong> '+p.why+'</div>'+
+      '<div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/'+p.pmid+'/" target="_blank" rel="noopener">PMID '+p.pmid+'</a><a href="https://doi.org/'+p.doi+'" target="_blank" rel="noopener">DOI '+p.doi+'</a></div>';
+      sec.appendChild(a);
+    }
+    main.appendChild(sec);
+  }
+}
+function mk(k,l){const b=document.createElement('button');b.className='chip';b.type='button';b.textContent=l;b.setAttribute('aria-pressed',k===cur);b.onclick=()=>{cur=k;[...chips.children].forEach(c=>c.setAttribute('aria-pressed',c===b));render()};chips.appendChild(b)}
+mk('all','All '+P.length);for(const k in G)mk(k,G[k]);
+render();
+</script>

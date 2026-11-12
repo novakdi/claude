@@ -108,6 +108,120 @@
       "doi": "10.1515/jtim-2026-0048",
       "title": "Bone marrow mesenchymal stem cells are functionally remodeled after complete remission of acute myeloid leukemia",
       "sent_date": "2026-10-05"
+    },
+    {
+      "pmid": "42380663",
+      "doi": "10.1038/s41375-026-03029-7",
+      "title": "Spatial remodeling of bone marrow architecture defines tissue-state signatures of disease activity and therapeutic response in myelodysplastic neoplasms",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42855473",
+      "doi": "10.1038/s41375-026-03164-1",
+      "title": "Mitochondria transfer via tunneling nanotubes drives macrophage immunosuppression and metabolic reprogramming in pediatric AML",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42122217",
+      "doi": "10.3390/cancers18091423",
+      "title": "A Three-Gene Interferon Signature Predicts Sustained Complete Remission in Pediatric AML Patients",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42836918",
+      "doi": "10.1186/s40348-026-00264-x",
+      "title": "Menin inhibition in pediatric UBTF-TD myelodysplastic syndrome: molecular rationale and clinical observation",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42816584",
+      "doi": "10.1038/s41590-026-02668-3",
+      "title": "Prefibrotic bone marrow microenvironment is a hallmark of clonal hematopoiesis",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42847991",
+      "doi": "10.1172/jci.insight.199771",
+      "title": "Latexin deletion in the bone marrow niche suppresses leukemia via LIFR downregulation and immune activation",
+      "sent_date": "2026-10-12"
+    },
+    {
+      "pmid": "42871763",
+      "doi": "10.1002/hem3.70498",
+      "title": "Immune and cellular determinants of response to HMA-venetoclax regimens in acute myeloid leukemia",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42856304",
+      "doi": "10.64898/2026.09.30.755147",
+      "title": "Clonally Expanded CD8 T Cells in AML Adopt an NK-Like Program Distinct from Canonical Exhaustion",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42883947",
+      "doi": "10.3390/ijms27198703",
+      "title": "Inflammatory Network Remodeling in AML Is Driven by Neutrophil-Centric Self-Amplifying Circuits",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42882852",
+      "doi": "10.3390/cancers18193158",
+      "title": "Single-Cell and Multi-Omics Profiling of the Multiple Myeloma Immune Niche: From Bone Marrow Architecture and Metabolic Reprogramming to Immunotherapy Response",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42876702",
+      "doi": "10.3389/fimmu.2026.1946638",
+      "title": "T cells form distinct spatially restricted immune responses in synovium of patients with psoriasis arthritis and rheumatoid arthritis",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42782774",
+      "doi": "10.3390/cells15181674",
+      "title": "Targeting TGFBR1 with the Investigational Inhibitor TP-6379 Improves Hematopoiesis in Low-Risk MDS Ex Vivo",
+      "sent_date": "2026-10-19"
+    },
+    {
+      "pmid": "42439614",
+      "doi": "10.3390/cells15131137",
+      "title": "Inflammatory Signatures in MDS: The Missing Link Between Genetics, Microenvironment, and Therapy",
+      "sent_date": "2026-10-26"
+    },
+    {
+      "pmid": "42084223",
+      "doi": "10.1158/0008-5472.CAN-25-3699",
+      "title": "CellFuse Enables Multimodal Integration of Single-Cell and Spatial Proteomics Data for Systems-Level Analysis in Cancer",
+      "sent_date": "2026-10-26"
+    },
+    {
+      "pmid": "42957737",
+      "doi": "10.1038/s41467-026-78283-5",
+      "title": "Characterization of chemoresistant cell populations improves risk stratification and therapy prediction in pediatric acute myeloid leukemia",
+      "sent_date": "2026-11-02"
+    },
+    {
+      "pmid": "42848511",
+      "doi": "10.1016/j.celrep.2026.118083",
+      "title": "Sorafenib enhances graft-versus-leukemia activity through IL-18-mediated macrophage and NK cell crosstalk in FLT3-ITD acute myeloid leukemia",
+      "sent_date": "2026-11-02"
+    },
+    {
+      "pmid": "42895851",
+      "doi": "10.1016/j.celrep.2026.118157",
+      "title": "RUNX1-ETO oncoprotein levels determine the balance between endothelial reprogramming and pre-leukemic growth in a human ES cell model of AML",
+      "sent_date": "2026-11-02"
+    },
+    {
+      "pmid": "42957952",
+      "doi": "10.1007/978-1-0716-5591-7_7",
+      "title": "Intravital Imaging of Early AML Expansion in the Mouse Calvarial Bone Marrow",
+      "sent_date": "2026-11-09"
+    },
+    {
+      "pmid": "42998044",
+      "doi": "10.1002/ajh.70542",
+      "title": "Distinct Consequences of BCOR and BCORL1 Mutations in Myeloid Neoplasms and Bone Marrow Failure",
+      "sent_date": "2026-11-09"
     }
   ]
 }
