@@ -1,0 +1,82 @@
+<title>Marrow Digest 12 Oct</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+<style>
+/* Layout: masthead + filter chips + single reading column of paper cards; slide-stain palette (hematoxylin / eosin) */
+:root{
+  --bg:#f3f3f7; --surface:#ffffff; --fg:#1d1b2b; --muted:#5d5a72; --line:#dcdbe6;
+  --hema:#4a3f8f; --hema-soft:#e8e5f6; --eosin:#b83a6e; --eosin-soft:#f8e4ec; --ok:#1f7a5a;
+  --serif:"Source Serif 4",Georgia,serif; --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14131d; --surface:#1d1c2a; --fg:#ecebf5; --muted:#a6a3bd; --line:#34324a;
+  --hema:#a99cf0; --hema-soft:#2c2850; --eosin:#f08ab3; --eosin-soft:#44212f; --ok:#5fd0a5; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#14131d; --surface:#1d1c2a; --fg:#ecebf5; --muted:#a6a3bd; --line:#34324a;
+  --hema:#a99cf0; --hema-soft:#2c2850; --eosin:#f08ab3; --eosin-soft:#44212f; --ok:#5fd0a5; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.6;padding-inline:16px;padding-block:32px 64px}
+.wrap{max-width:820px;margin-inline:auto;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:10px;border-bottom:2px solid var(--hema);padding-bottom:20px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--eosin)}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,6vw,44px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{color:var(--muted);margin:0;max-width:65ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 13px var(--sans);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--hema);border-color:var(--hema);color:var(--surface)}
+.chip:focus-visible,a:focus-visible{outline:2px solid var(--eosin);outline-offset:2px}
+.group{display:flex;flex-direction:column;gap:14px}
+.group h2{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:500}
+article{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.tag{background:var(--hema-soft);color:var(--hema);padding:2px 8px;border-radius:3px;font-weight:500}
+.tag.pre{background:var(--eosin-soft);color:var(--eosin)}
+.rel{display:inline-flex;gap:3px;align-items:center}
+.rel i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.rel i.on{background:var(--eosin)}
+h3{font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.25;margin:0;text-wrap:balance}
+.sum{margin:0;max-width:65ch}
+h4{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--hema);margin:0 0 6px;font-weight:500}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:5px;max-width:65ch}
+li::marker{color:var(--eosin)}
+.why{background:var(--hema-soft);border-radius:4px;padding:10px 12px;font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--mono);font-size:12px}
+a{color:var(--hema)}
+footer{color:var(--muted);font-size:12px;font-family:var(--mono)}
+@media(max-width:480px){article{padding:16px}}
+</style>
+<div class="wrap">
+<header>
+  <div class="kicker" id="kick">Digest · 12 Oct 2026</div>
+  <h1>Marrow Digest</h1>
+  <p class="lede">Nine papers on spatial remodeling of marrow in MDS and AML, pediatric AML mechanisms, and mouse niche models. No CODEX leukemia paper this week.</p>
+  <div class="chips" id="chips" role="group" aria-label="Filter by topic"></div>
+</header>
+<main id="main" class="wrap" style="gap:28px"></main>
+<footer>PubMed, entries up to the digest date. Preprints are not peer reviewed.</footer>
+</div>
+<script>
+const G={"s": "Spatial proteomics and imaging", "p": "Pediatric AML, MDS and JMML", "n": "AML microenvironment and mouse models"};
+const P=[{"j": "Leukemia · 2026", "t": "Spatial remodeling of bone marrow architecture defines tissue-state signatures of disease activity and therapeutic response in MDS", "rel": 5, "tag": "Original research", "sum": "Whole-slide multiplex immunofluorescence with single-cell phenotyping of more than 5 million cells from MDS marrow biopsies: diagnostic (n=36), longitudinal (n=29), precursor (n=13) and normal (n=21).", "f": ["MDS shows genotype-imprinted remodeling: altered progenitor patterning, disrupted erythroid islands, HSPCs displaced from perivascular niches.", "An 82-feature Microarchitectural Perturbation Score (MDS-MAPS) separated remission from active disease better than blast percentage (AUC 0.883 vs 0.660).", "It also separated low-blast MDS from CCUS (AUC 0.815), normalized in remission and re-emerged at relapse."], "why": "A template for linking spatial features of the marrow to disease activity and therapy response in MDS.", "doi": "10.1038/s41375-026-03029-7", "pmid": "42380663", "g": "s"}, {"j": "bioRxiv · May 2026", "t": "Niche-level immune evasion in TP53-mutant AML residual disease revealed by spatial proteomics", "rel": 5, "tag": "bioRxiv preprint", "sum": "Sequential immunofluorescence on whole bone marrow biopsies from TP53-wild-type and TP53-mutant AML, at diagnosis and in morphological complete remission. Mutant cells were identified by high p53 and mapped against stromal and immune niches.", "f": ["At remission, TP53-mutant marrow shows B-cell loss and more regulatory T cells.", "Erythroid and immature leukemia clusters persist in perisinusoidal niches, apart from T-cell clusters.", "FOXP3-high Tregs sit close to mutant MRD cells.", "scRNA-seq points to an erythroid to T-cell GDF15–CD48 axis as the suppression route."], "why": "Spatial marrow map of AML tied to residual disease and relapse risk, the closest match to your project.", "doi": "10.64898/2026.05.15.725421", "pre": 1, "pmid": "42239259", "g": "s"}, {"j": "Nature Immunology · 2026", "t": "Prefibrotic bone marrow microenvironment is a hallmark of clonal hematopoiesis", "rel": 4, "tag": "Original research", "sum": "scRNA-seq, histology and spatial transcriptomics of human marrow with clonal hematopoiesis (CHIP).", "f": ["Fibro-inflammatory remodeling with expanded CAF-like fibroblasts and higher collagen and ECM programs.", "Spatial fiber-enriched hubs contain CXCL12+ fibroblasts, macrophages and lymphoid cells, with TGF-β and TNF signaling.", "Niche changes appear before overt malignancy."], "why": "Shows that the niche is altered before leukemia, a useful reference for pre-malignant states.", "doi": "10.1038/s41590-026-02668-3", "pmid": "42816584", "g": "s"}, {"j": "Leukemia · Oct 2026", "t": "Mitochondria transfer via tunneling nanotubes drives macrophage immunosuppression and metabolic reprogramming in pediatric AML", "rel": 5, "tag": "Original research", "sum": "Princess Máxima Center study of how pediatric AML cells reprogram macrophages in the marrow.", "f": ["Immunosuppressive macrophages dominate the pediatric AML microenvironment (RUNX1::RUNX1T1, KMT2A-rearranged).", "AML cells switch macrophages to an anti-inflammatory state (NF-κB suppression) by direct contact and tunneling-nanotube transfer of mitochondria, rewiring OXPHOS.", "Reprogrammed macrophages show impaired phagocytosis, chemoresistance, and reduced T-cell and bispecific-antibody killing."], "why": "A pediatric AML niche mechanism involving macrophages, which a CODEX panel could look for in situ.", "doi": "10.1038/s41375-026-03164-1", "pmid": "42855473", "g": "p"}, {"j": "Cancers · 2026", "t": "A three-gene interferon signature predicts sustained complete remission in pediatric AML", "rel": 4, "tag": "Original research", "sum": "32 pediatric AML samples at diagnosis (NanoString IO360, RNA-seq, flow cytometry), validated in the TARGET cohort.", "f": ["The interferon signature tracks chemosensitivity, lower MRD and longer overall survival, also within standard-risk patients.", "It is linked to non-exhausted CD4 and CD8 cytotoxic cells and CD8 TEMRA cells."], "why": "Connects immune state at diagnosis to outcome in children.", "doi": "10.3390/cancers18091423", "pmid": "42122217", "g": "p"}, {"j": "Cancer Letters · Oct 2026", "t": "Reactive oxygen species define leukemia stem cell identity in pediatric AML", "rel": 4, "tag": "Original research", "sum": "Pediatric AML cells were sorted by ROS level and tested for stemness, niche behavior and metabolism, including in mice and a 3D niche model.", "f": ["ROS-low cells are quiescent, form colonies serially and engraft in mice.", "In the 3D niche model they settle in hypoxic regions and resist cytarabine.", "Low oxidative phosphorylation, yet they depend on complex I.", "A ROS-low gene signature finds stem cells in scRNA-seq data and is prognostic."], "why": "Links stem cell state to hypoxic niche location in children.", "doi": "10.1016/j.canlet.2026.218866", "pmid": "42830144", "g": "p"}, {"j": "Mol Cell Pediatr · 2026", "t": "Menin inhibition in pediatric UBTF-TD myelodysplastic syndrome", "rel": 2, "tag": "Case report", "sum": "A single child with MDS with excess blasts and a UBTF tandem duplication, a high-risk pediatric MDS/AML subtype with a HOX/MEIS1 program.", "f": ["Revumenib added to azacitidine and venetoclax led to transfusion independence and clearance of blasts and the UBTF-TD clone.", "The child then had allogeneic transplant and was in complete remission at one year.", "One case, so hypothesis-generating only."], "why": "Pediatric MDS genetics and a new targeted option, but one patient only.", "doi": "10.1186/s40348-026-00264-x", "pmid": "42836918", "g": "p"}, {"j": "Blood · Oct 2026", "t": "FGF18 mediates fibroblast–leukemia cross talk to promote AML progression", "rel": 3, "tag": "Original research", "sum": "scRNA-seq of the AML marrow niche, fibroblast-specific knockout, a CRISPR screen in AML cells and a neutralizing antibody in mice.", "f": ["Stromal fibroblasts upregulate Fgf18; deleting it delays disease and extends survival.", "FGF18 acts through FGFR3, AKT–mTOR and IL-6, which feeds back on fibroblast JAK–STAT3.", "The loop suppresses CD8+ T-cell function.", "High FGF18 predicts poor prognosis; the antibody restores CD8 function and adds to anti-PD-1."], "why": "A defined stromal cell to leukemia signaling loop, tested in vivo.", "doi": "10.1182/blood.2026033125", "pmid": "42360909", "g": "n"}, {"j": "JCI Insight · Oct 2026", "t": "Latexin deletion in the bone marrow niche suppresses leukemia via LIFR downregulation and immune activation", "rel": 3, "tag": "Original research", "sum": "MLL-AF9 AML transplanted into Lxn-knockout recipient mice, with stromal scRNA-seq.", "f": ["Lxn-knockout recipients live longer and have fewer LSCs and blasts.", "Lower LIFR signaling in MSCs raises Cxcl9 and recruits more cytotoxic CD8 T cells.", "Adding anti-PD-1 prolongs survival further."], "why": "A good template for niche-focused murine validation, which is your aim 3.", "doi": "10.1172/jci.insight.199771", "pmid": "42847991", "g": "n"}];
+const main=document.getElementById('main'),chips=document.getElementById('chips');
+let cur='all';
+function render(){
+  main.innerHTML='';
+  for(const k of Object.keys(G)){
+    if(cur!=='all'&&cur!==k)continue;
+    const items=P.filter(p=>p.g===k); if(!items.length)continue;
+    const sec=document.createElement('section');sec.className='group';
+    sec.innerHTML='<h2>'+G[k]+' ('+items.length+')</h2>';
+    for(const p of items){
+      const a=document.createElement('article');
+      a.innerHTML='<div class="meta"><span class="tag'+(p.pre?' pre':'')+'">'+p.tag+'</span><span>'+p.j+'</span><span class="rel" title="Relevance to your project: '+p.rel+' of 5" aria-label="Relevance '+p.rel+' of 5">'+[1,2,3,4,5].map(i=>'<i class="'+(i<=p.rel?'on':'')+'"></i>').join('')+'</span></div>'+
+      '<h3>'+p.t+'</h3><p class="sum">'+p.sum+'</p><div><h4>Main findings</h4><ul>'+p.f.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>'+
+      '<div class="why"><strong>Why it matters for you:</strong> '+p.why+'</div>'+
+      '<div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/'+p.pmid+'/" target="_blank" rel="noopener">PMID '+p.pmid+'</a><a href="https://doi.org/'+p.doi+'" target="_blank" rel="noopener">DOI '+p.doi+'</a></div>';
+      sec.appendChild(a);
+    }
+    main.appendChild(sec);
+  }
+}
+function mk(k,l){const b=document.createElement('button');b.className='chip';b.type='button';b.textContent=l;b.setAttribute('aria-pressed',k===cur);b.onclick=()=>{cur=k;[...chips.children].forEach(c=>c.setAttribute('aria-pressed',c===b));render()};chips.appendChild(b)}
+mk('all','All '+P.length);for(const k in G)mk(k,G[k]);
+render();
+</script>
