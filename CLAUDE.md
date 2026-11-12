@@ -7,3 +7,9 @@ This repo backs a recurring literature-search task for a PhD project on the bone
 **Before compiling a new digest:** read this file and exclude any paper whose `pmid` or `doi` already appears in it, even if it would otherwise match the search criteria. Do not resend or re-summarize a paper already listed.
 
 **After sending a new digest:** append every paper included in that digest to the `papers` array in `literature-digest/sent-papers.json` (same shape: `pmid`, `doi`, `title`, `sent_date`), and commit/push the update so the next run sees it.
+
+**Digest presentation (mandatory, every run):** after compiling a digest, ALWAYS create its designed HTML view and publish it as an Artifact so the user gets a link. Do this before finishing the run, never skip it.
+1. Add each paper to `literature-digest/digest-data.json` under `papers` (keyed by PMID: journal, title, relevance 1-5, tag, summary, findings, why, doi) and add the digest under `digests` (date, lede, footer, items with group keys s/p/n/o).
+2. Run `cd literature-digest && python3 build_html.py YYYY-MM-DD` to write `digest-YYYY-MM-DD.html` (uses `template.html`; do not hand-write the HTML).
+3. Publish that HTML with the Artifact tool and include the link in the notification.
+4. Commit the md/json/html files and the updated `sent-papers.json` on the session branch and push. Earlier runs each used their own branch, so check that `sent-papers.json` and digest files on the branch contain everything already sent before relying on them.

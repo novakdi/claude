@@ -1,0 +1,549 @@
+{
+ "groups": {
+  "s": "Spatial proteomics and imaging",
+  "p": "Pediatric AML, MDS and JMML",
+  "n": "AML microenvironment and mouse models",
+  "o": "MDS and related disorders"
+ },
+ "papers": {
+  "42380663": {
+   "j": "Leukemia · 2026",
+   "t": "Spatial remodeling of bone marrow architecture defines tissue-state signatures of disease activity and therapeutic response in MDS",
+   "rel": 5,
+   "tag": "Original research",
+   "sum": "Whole-slide multiplex immunofluorescence with single-cell phenotyping of more than 5 million cells from MDS marrow biopsies: diagnostic (n=36), longitudinal (n=29), precursor (n=13) and normal (n=21).",
+   "f": [
+    "MDS shows genotype-imprinted remodeling: altered progenitor patterning, disrupted erythroid islands, HSPCs displaced from perivascular niches.",
+    "An 82-feature Microarchitectural Perturbation Score (MDS-MAPS) separated remission from active disease better than blast percentage (AUC 0.883 vs 0.660).",
+    "It also separated low-blast MDS from CCUS (AUC 0.815), normalized in remission and re-emerged at relapse."
+   ],
+   "why": "A template for linking spatial features of the marrow to disease activity and therapy response in MDS.",
+   "doi": "10.1038/s41375-026-03029-7"
+  },
+  "42239259": {
+   "j": "bioRxiv · May 2026",
+   "t": "Niche-level immune evasion in TP53-mutant AML residual disease revealed by spatial proteomics",
+   "rel": 5,
+   "tag": "bioRxiv preprint",
+   "sum": "Sequential immunofluorescence on whole bone marrow biopsies from TP53-wild-type and TP53-mutant AML, at diagnosis and in morphological complete remission. Mutant cells were identified by high p53 and mapped against stromal and immune niches.",
+   "f": [
+    "At remission, TP53-mutant marrow shows B-cell loss and more regulatory T cells.",
+    "Erythroid and immature leukemia clusters persist in perisinusoidal niches, apart from T-cell clusters.",
+    "FOXP3-high Tregs sit close to mutant MRD cells.",
+    "scRNA-seq points to an erythroid to T-cell GDF15–CD48 axis as the suppression route."
+   ],
+   "why": "Spatial marrow map of AML tied to residual disease and relapse risk, the closest match to your project.",
+   "doi": "10.64898/2026.05.15.725421",
+   "pre": 1
+  },
+  "42816584": {
+   "j": "Nature Immunology · 2026",
+   "t": "Prefibrotic bone marrow microenvironment is a hallmark of clonal hematopoiesis",
+   "rel": 4,
+   "tag": "Original research",
+   "sum": "scRNA-seq, histology and spatial transcriptomics of human marrow with clonal hematopoiesis (CHIP).",
+   "f": [
+    "Fibro-inflammatory remodeling with expanded CAF-like fibroblasts and higher collagen and ECM programs.",
+    "Spatial fiber-enriched hubs contain CXCL12+ fibroblasts, macrophages and lymphoid cells, with TGF-β and TNF signaling.",
+    "Niche changes appear before overt malignancy."
+   ],
+   "why": "Shows that the niche is altered before leukemia, a useful reference for pre-malignant states.",
+   "doi": "10.1038/s41590-026-02668-3"
+  },
+  "42855473": {
+   "j": "Leukemia · Oct 2026",
+   "t": "Mitochondria transfer via tunneling nanotubes drives macrophage immunosuppression and metabolic reprogramming in pediatric AML",
+   "rel": 5,
+   "tag": "Original research",
+   "sum": "Princess Máxima Center study of how pediatric AML cells reprogram macrophages in the marrow.",
+   "f": [
+    "Immunosuppressive macrophages dominate the pediatric AML microenvironment (RUNX1::RUNX1T1, KMT2A-rearranged).",
+    "AML cells switch macrophages to an anti-inflammatory state (NF-κB suppression) by direct contact and tunneling-nanotube transfer of mitochondria, rewiring OXPHOS.",
+    "Reprogrammed macrophages show impaired phagocytosis, chemoresistance, and reduced T-cell and bispecific-antibody killing."
+   ],
+   "why": "A pediatric AML niche mechanism involving macrophages, which a CODEX panel could look for in situ.",
+   "doi": "10.1038/s41375-026-03164-1"
+  },
+  "42122217": {
+   "j": "Cancers · 2026",
+   "t": "A three-gene interferon signature predicts sustained complete remission in pediatric AML",
+   "rel": 4,
+   "tag": "Original research",
+   "sum": "32 pediatric AML samples at diagnosis (NanoString IO360, RNA-seq, flow cytometry), validated in the TARGET cohort.",
+   "f": [
+    "The interferon signature tracks chemosensitivity, lower MRD and longer overall survival, also within standard-risk patients.",
+    "It is linked to non-exhausted CD4 and CD8 cytotoxic cells and CD8 TEMRA cells."
+   ],
+   "why": "Connects immune state at diagnosis to outcome in children.",
+   "doi": "10.3390/cancers18091423"
+  },
+  "42830144": {
+   "j": "Cancer Letters · Oct 2026",
+   "t": "Reactive oxygen species define leukemia stem cell identity in pediatric AML",
+   "rel": 4,
+   "tag": "Original research",
+   "sum": "Pediatric AML cells were sorted by ROS level and tested for stemness, niche behavior and metabolism, including in mice and a 3D niche model.",
+   "f": [
+    "ROS-low cells are quiescent, form colonies serially and engraft in mice.",
+    "In the 3D niche model they settle in hypoxic regions and resist cytarabine.",
+    "Low oxidative phosphorylation, yet they depend on complex I.",
+    "A ROS-low gene signature finds stem cells in scRNA-seq data and is prognostic."
+   ],
+   "why": "Links stem cell state to hypoxic niche location in children.",
+   "doi": "10.1016/j.canlet.2026.218866"
+  },
+  "42836918": {
+   "j": "Mol Cell Pediatr · 2026",
+   "t": "Menin inhibition in pediatric UBTF-TD myelodysplastic syndrome",
+   "rel": 2,
+   "tag": "Case report",
+   "sum": "A single child with MDS with excess blasts and a UBTF tandem duplication, a high-risk pediatric MDS/AML subtype with a HOX/MEIS1 program.",
+   "f": [
+    "Revumenib added to azacitidine and venetoclax led to transfusion independence and clearance of blasts and the UBTF-TD clone.",
+    "The child then had allogeneic transplant and was in complete remission at one year.",
+    "One case, so hypothesis-generating only."
+   ],
+   "why": "Pediatric MDS genetics and a new targeted option, but one patient only.",
+   "doi": "10.1186/s40348-026-00264-x"
+  },
+  "42360909": {
+   "j": "Blood · Oct 2026",
+   "t": "FGF18 mediates fibroblast–leukemia cross talk to promote AML progression",
+   "rel": 3,
+   "tag": "Original research",
+   "sum": "scRNA-seq of the AML marrow niche, fibroblast-specific knockout, a CRISPR screen in AML cells and a neutralizing antibody in mice.",
+   "f": [
+    "Stromal fibroblasts upregulate Fgf18; deleting it delays disease and extends survival.",
+    "FGF18 acts through FGFR3, AKT–mTOR and IL-6, which feeds back on fibroblast JAK–STAT3.",
+    "The loop suppresses CD8+ T-cell function.",
+    "High FGF18 predicts poor prognosis; the antibody restores CD8 function and adds to anti-PD-1."
+   ],
+   "why": "A defined stromal cell to leukemia signaling loop, tested in vivo.",
+   "doi": "10.1182/blood.2026033125"
+  },
+  "42847991": {
+   "j": "JCI Insight · Oct 2026",
+   "t": "Latexin deletion in the bone marrow niche suppresses leukemia via LIFR downregulation and immune activation",
+   "rel": 3,
+   "tag": "Original research",
+   "sum": "MLL-AF9 AML transplanted into Lxn-knockout recipient mice, with stromal scRNA-seq.",
+   "f": [
+    "Lxn-knockout recipients live longer and have fewer LSCs and blasts.",
+    "Lower LIFR signaling in MSCs raises Cxcl9 and recruits more cytotoxic CD8 T cells.",
+    "Adding anti-PD-1 prolongs survival further."
+   ],
+   "why": "A good template for niche-focused murine validation, which is your aim 3.",
+   "doi": "10.1172/jci.insight.199771"
+  },
+  "42871763": {
+   "j": "HemaSphere · 2026",
+   "t": "Immune and cellular determinants of response to HMA-venetoclax in AML",
+   "rel": 4,
+   "tag": "Original research",
+   "sum": "132 patients with clinical and genomic data, plus scRNA-seq and TCR sequencing in 10 patients.",
+   "f": [
+    "Responders have expanded cytotoxic CD8 T cells, higher TCR diversity and antigen-presentation activation.",
+    "Non-responders show inflammatory signaling, impaired myeloid maturation, an IDO1+ dendritic-cell-rich suppressive niche and a stem-like, EMT state.",
+    "LAG-3 marks dysfunctional T cells and is a candidate biomarker or target."
+   ],
+   "why": "Ties marrow immune composition to therapy response, the question in your aim 2.",
+   "doi": "10.1002/hem3.70498"
+  },
+  "42856304": {
+   "j": "bioRxiv · Sep 2026",
+   "t": "Clonally expanded CD8 T cells in AML adopt an NK-like program",
+   "rel": 3,
+   "tag": "bioRxiv preprint",
+   "sum": "Mass cytometry of 46 diagnostic AML marrows plus scRNA-seq and TCR sequencing.",
+   "f": [
+    "CD8 T cells skew to TEMRA; classic exhaustion is rare.",
+    "TEMRA cells are functional (IFNγ and TNFα).",
+    "The most expanded clones, of unknown specificity, express NK receptors (LaNKi score), validated in other datasets."
+   ],
+   "why": "Describes the T-cell states you would see in a marrow CODEX panel.",
+   "doi": "10.64898/2026.09.30.755147",
+   "pre": 1
+  },
+  "42883947": {
+   "j": "Int J Mol Sci · 2026",
+   "t": "Inflammatory network remodeling in AML is driven by neutrophil-centric self-amplifying circuits",
+   "rel": 2,
+   "tag": "Original research",
+   "sum": "scRNA-seq of 3 AML and 6 donor samples with CellChat, plus Luminex cytokines in 46 AML and 26 controls.",
+   "f": [
+    "Communication shifts from T cells toward myeloid cells and neutrophils (CXCL8–CXCR2, CCL3–CCR1).",
+    "An inflammatory risk score (CXCL8, CCL2, IL-1A; C-index 0.729) splits ELN2022 intermediate risk.",
+    "Very small scRNA-seq cohort."
+   ],
+   "why": "Cytokine-based risk readout, though the single-cell cohort is small.",
+   "doi": "10.3390/ijms27198703"
+  },
+  "42782774": {
+   "j": "Cells · 2026",
+   "t": "Targeting TGFBR1 with TP-6379 improves hematopoiesis in low-risk MDS ex vivo",
+   "rel": 3,
+   "tag": "Original research",
+   "sum": "Primary low-risk MDS marrow cells treated with the ALK5-specific inhibitor TP-6379, plus S100A9-transgenic mice.",
+   "f": [
+    "S100A9-driven inflammation and TGFβ impair MDS hematopoiesis.",
+    "TP-6379 restored hematopoiesis, especially in spliceosome-mutant samples, and rescued the S100A9 effect.",
+    "Validated in S100A9-transgenic mice."
+   ],
+   "why": "MDS niche inflammation with a murine model.",
+   "doi": "10.3390/cells15181674"
+  },
+  "42876702": {
+   "j": "Front Immunol · 2026",
+   "t": "T cells form distinct spatially restricted immune responses in synovium of psoriatic arthritis and rheumatoid arthritis",
+   "rel": 4,
+   "tag": "Original research",
+   "sum": "High-multiplex IHC on synovial biopsies with neighborhood analysis around lining fibroblasts.",
+   "f": [
+    "In PsA, Th1 and Th17 cells sit closest to fibroblasts, then Th2 and Th9.",
+    "In RA, Th9, Th17 and Th22 form the barrier.",
+    "Methotrexate is linked to about 50% fewer Th cells nearby."
+   ],
+   "why": "A multiplexed imaging immunology paper with stromal-centered neighborhood analysis and a treatment comparison.",
+   "doi": "10.3389/fimmu.2026.1946638"
+  },
+  "42882852": {
+   "j": "Cancers · Sep 2026",
+   "t": "Single-cell and multi-omics profiling of the multiple myeloma immune niche",
+   "rel": 3,
+   "tag": "Review",
+   "sum": "Review of spatial transcriptomics and multiplexed imaging of the myeloma marrow.",
+   "f": [
+    "Immune exclusion, stromal support and metabolic niches shape the marrow.",
+    "CAR-T and T-cell-engager response depends on spatial accessibility, antigen retention and myeloid suppression.",
+    "Proposes a spatial-temporal framework for progression and relapse."
+   ],
+   "why": "Overview of how spatial data is being used in another marrow cancer.",
+   "doi": "10.3390/cancers18193158"
+  },
+  "42657369": {
+   "j": "J Transl Intern Med · Aug 2026",
+   "t": "Bone marrow mesenchymal stem cells are functionally remodeled after complete remission of AML",
+   "rel": 2,
+   "tag": "Original research",
+   "sum": "Marrow MSCs from de novo AML, AML in complete remission and healthy donors, with an AML remission mouse model.",
+   "f": [
+    "Dysfunctional AML MSCs recover in remission and resemble healthy MSCs.",
+    "Fewer senescent MSCs after remission.",
+    "Remission MSCs can still be pushed back into senescence by AML cells."
+   ],
+   "why": "Shows the stroma is plastic and tracks disease state.",
+   "doi": "10.1515/jtim-2026-0048"
+  },
+  "42439614": {
+   "j": "Cells · Jun 2026",
+   "t": "Inflammatory signatures in myelodysplastic syndromes",
+   "rel": 3,
+   "tag": "Review",
+   "sum": "Narrative review of inflammation in MDS.",
+   "f": [
+    "Chronic inflammation and inflammaging drive clonal selection and niche remodeling.",
+    "TP53 and spliceosome mutations amplify inflammatory signaling and reshape the niche.",
+    "Peripheral blood inflammatory indices correlate with prognosis and therapy response."
+   ],
+   "why": "Background for the MDS niche and why inflammation matters.",
+   "doi": "10.3390/cells15131137"
+  },
+  "42084223": {
+   "j": "Cancer Research · Jul 2026",
+   "t": "CellFuse enables multimodal integration of single-cell and spatial proteomics data for systems-level analysis in cancer",
+   "rel": 4,
+   "tag": "Method",
+   "sum": "Supervised contrastive learning framework that integrates cytometry, CITE-seq and spatial proteomics even when few markers are shared.",
+   "f": [
+    "Accurate cross-modality label transfer that outperforms existing methods in blood, bone marrow and lymphoma, including rare subsets.",
+    "In solid tumors it reconstructs spatial microenvironments whose interactions correlate with treatment response."
+   ],
+   "why": "Directly useful for combining CODEX-type data with flow or CITE-seq.",
+   "doi": "10.1158/0008-5472.CAN-25-3699"
+  },
+  "42957737": {
+   "j": "Nature Communications · Oct 2026",
+   "t": "Characterization of chemoresistant cell populations improves risk stratification and therapy prediction in pediatric AML",
+   "rel": 5,
+   "tag": "Original research",
+   "sum": "Single-cell transcriptomes of paired diagnosis and relapse samples were used to infer chemoresistant populations, then combined with cytogenetics and MRD after induction.",
+   "f": [
+    "Nearly 40% of pediatric AML patients relapse and die.",
+    "The combined approach finds a group of 20% of patients not transplanted in first remission, with 5-year event-free survival below 40% and almost half of the deaths.",
+    "Chemoresistant populations show therapeutic vulnerabilities for high-risk disease."
+   ],
+   "why": "Pediatric AML with outcome-linked single-cell data and better risk groups, the same kind of link you want from spatial data.",
+   "doi": "10.1038/s41467-026-78283-5"
+  },
+  "42848511": {
+   "j": "Cell Reports · Sep 2026",
+   "t": "Sorafenib enhances graft-versus-leukemia activity through IL-18-mediated macrophage and NK cell crosstalk in FLT3-ITD AML",
+   "rel": 3,
+   "tag": "Original research",
+   "sum": "scRNA-seq of the marrow immune microenvironment in FLT3-ITD AML patients receiving sorafenib after allogeneic transplant, with mouse experiments.",
+   "f": [
+    "Sorafenib promotes macrophage to NK cell crosstalk through IL-18, raising NK cytotoxicity and graft-versus-leukemia effect.",
+    "It inhibits mitochondrial complexes I and V, which raises IL-18 production (PKM2–RelA) and release through caspase-3/GSDME pyroptosis in macrophages."
+   ],
+   "why": "Drug effect on the marrow immune niche, with macrophage and NK cell interaction.",
+   "doi": "10.1016/j.celrep.2026.118083"
+  },
+  "42895851": {
+   "j": "Cell Reports · Oct 2026",
+   "t": "RUNX1-ETO oncoprotein levels determine the balance between endothelial reprogramming and pre-leukemic growth in a human ES cell model of AML",
+   "rel": 3,
+   "tag": "Original research",
+   "sum": "Human embryonic stem cell line with inducible RUNX1-ETO, analyzed by single-cell methods.",
+   "f": [
+    "RUNX1-ETO reprograms ESC-derived myeloid progenitors toward endothelial cells, depending on its level and irreversibly.",
+    "A subpopulation of blood progenitors escapes reprogramming and keeps proliferating when co-cultured with endothelial cells.",
+    "Cell-cell interactions maintain pre-leukemic cells."
+   ],
+   "why": "t(8;21) is common in children, and this shows how endothelial interactions support pre-leukemic cells.",
+   "doi": "10.1016/j.celrep.2026.118157"
+  },
+  "42637517": {
+   "j": "Life Science Alliance · Aug 2026",
+   "t": "Single-cell chromatin profiling reveals relapse-related priming in pediatric AML",
+   "rel": 4,
+   "tag": "Original research",
+   "sum": "scATAC-seq of 177,500 cells from 16 diagnostic pediatric AML samples (t(8;21), inv(16), FLT3-ITD) with long-term outcome, comparing relapsed and non-relapsed patients.",
+   "f": [
+    "Relapse-linked chromatin signatures are visible at diagnosis across subtypes.",
+    "Higher innate immune and inflammatory activation, and more HSC/MPP-like leukemic progenitors.",
+    "AP-1, RUNX1, SPI1 and ETS motifs drive the relapse state, and their high expression predicts worse survival in other AML cohorts."
+   ],
+   "why": "Pediatric cohort with outcome data.",
+   "doi": "10.26508/lsa.202603746"
+  },
+  "41874448": {
+   "j": "Cancer Discovery · Aug 2026",
+   "t": "Same-slide spatial multiomics with IN-DEPTH reveals tumor virus-linked reorganization of the microenvironment",
+   "rel": 4,
+   "tag": "Method",
+   "sum": "Single-cell spatial proteomics imaging guides spatial transcriptomic capture on the same slide without RNA loss. A graph method (SGCC) links protein and RNA layers. Tested on EBV-positive and EBV-negative DLBCL.",
+   "f": [
+    "Protein-first design keeps epitopes, RNA quality and tissue intact on commercial platforms.",
+    "Found coordinated tumor, macrophage and CD4 T-cell remodeling, C1Q-high suppressive macrophages and a candidate IL27–STAT3 axis."
+   ],
+   "why": "One way to add transcriptomics to multiplexed protein imaging.",
+   "doi": "10.1158/2159-8290.CD-25-0775"
+  },
+  "42957952": {
+   "j": "Methods Mol Biol · 2026",
+   "t": "Intravital imaging of early AML expansion in the mouse calvarial bone marrow",
+   "rel": 4,
+   "tag": "Protocol",
+   "sum": "Step-by-step protocols for tracking early HoxA9-Meis1 AML expansion relative to local bone remodeling in live mouse calvaria.",
+   "f": [
+    "Leukemic cells expanded almost only in marrow cavities undergoing active bone remodeling.",
+    "Protocols cover labeling, imaging of leukemia, vasculature and bone remodeling together, plus image analysis.",
+    "Can be combined with spatially resolved tissue isolation and sequencing."
+   ],
+   "why": "Murine in vivo imaging of the AML niche, useful for your functional validation work.",
+   "doi": "10.1007/978-1-0716-5591-7_7"
+  },
+  "42998044": {
+   "j": "Am J Hematol · Nov 2026",
+   "t": "Distinct consequences of BCOR and BCORL1 mutations in myeloid neoplasms and bone marrow failure",
+   "rel": 3,
+   "tag": "Original research",
+   "sum": "Analysis of 11,340 patients, 418 with BCOR/BCORL1 mutations, with single-cell DNA sequencing and longitudinal data.",
+   "f": [
+    "In myeloid neoplasms the mutations are usually secondary and linked to older age and worse survival; in marrow failure they are primary and not prognostic.",
+    "BCOR/L1-mutant clones often shrink over time; progression tracks with extra mutations, especially RUNX1.",
+    "In marrow failure they tend to predict a good response to immunosuppression; BCOR loss lowers HLA class I, hinting at immune privilege."
+   ],
+   "why": "Genetic context for MDS and marrow failure that overlaps with pediatric disease.",
+   "doi": "10.1002/ajh.70542"
+  }
+ },
+ "digests": {
+  "2026-10-12": {
+   "lede": "Nine papers on spatial remodeling of marrow in MDS and AML, pediatric AML mechanisms, and mouse niche models. No CODEX leukemia paper this week.",
+   "footer": "PubMed, entries up to the digest date. Preprints are not peer reviewed.",
+   "items": [
+    {
+     "pmid": "42380663",
+     "g": "s"
+    },
+    {
+     "pmid": "42239259",
+     "g": "s"
+    },
+    {
+     "pmid": "42816584",
+     "g": "s"
+    },
+    {
+     "pmid": "42855473",
+     "g": "p"
+    },
+    {
+     "pmid": "42122217",
+     "g": "p"
+    },
+    {
+     "pmid": "42830144",
+     "g": "p"
+    },
+    {
+     "pmid": "42836918",
+     "g": "p"
+    },
+    {
+     "pmid": "42360909",
+     "g": "n"
+    },
+    {
+     "pmid": "42847991",
+     "g": "n"
+    }
+   ]
+  },
+  "2026-10-19": {
+   "lede": "Eight papers on response to therapy in AML, T-cell states, mouse niche models and multiplexed imaging in other tissues. No new pediatric CODEX paper this cycle.",
+   "footer": "PubMed, entries up to the digest date. Preprints are not peer reviewed.",
+   "items": [
+    {
+     "pmid": "42830144",
+     "g": "p"
+    },
+    {
+     "pmid": "42871763",
+     "g": "n"
+    },
+    {
+     "pmid": "42856304",
+     "g": "n"
+    },
+    {
+     "pmid": "42883947",
+     "g": "n"
+    },
+    {
+     "pmid": "42847991",
+     "g": "n"
+    },
+    {
+     "pmid": "42782774",
+     "g": "o"
+    },
+    {
+     "pmid": "42876702",
+     "g": "s"
+    },
+    {
+     "pmid": "42882852",
+     "g": "s"
+    }
+   ]
+  },
+  "2026-10-26": {
+   "lede": "Eight papers: one multiplexed imaging study of AML marrow, pediatric AML macrophages and stem cells, mouse niche work, MDS inflammation and a method for spatial proteomics data.",
+   "footer": "PubMed, entries up to the digest date. Preprints are not peer reviewed.",
+   "items": [
+    {
+     "pmid": "42239259",
+     "g": "s"
+    },
+    {
+     "pmid": "42855473",
+     "g": "p"
+    },
+    {
+     "pmid": "42830144",
+     "g": "p"
+    },
+    {
+     "pmid": "42847991",
+     "g": "n"
+    },
+    {
+     "pmid": "42657369",
+     "g": "n"
+    },
+    {
+     "pmid": "42439614",
+     "g": "o"
+    },
+    {
+     "pmid": "42084223",
+     "g": "s"
+    },
+    {
+     "pmid": "42882852",
+     "g": "s"
+    }
+   ]
+  },
+  "2026-11-02": {
+   "lede": "Six papers on pediatric AML risk and macrophages, stem cells, mouse niche work and the role of the marrow immune environment after transplant.",
+   "footer": "PubMed, entries up to the digest date. Preprints are not peer reviewed.",
+   "items": [
+    {
+     "pmid": "42855473",
+     "g": "p"
+    },
+    {
+     "pmid": "42957737",
+     "g": "p"
+    },
+    {
+     "pmid": "42830144",
+     "g": "p"
+    },
+    {
+     "pmid": "42847991",
+     "g": "n"
+    },
+    {
+     "pmid": "42848511",
+     "g": "n"
+    },
+    {
+     "pmid": "42895851",
+     "g": "n"
+    }
+   ]
+  },
+  "2026-11-09": {
+   "lede": "Eight papers: spatial proteomics in AML, pediatric AML relapse and risk, intravital imaging of the AML niche, and genetics of BCOR mutations in MDS and marrow failure.",
+   "footer": "PubMed, entries up to the digest date. Preprints are not peer reviewed.",
+   "items": [
+    {
+     "pmid": "42239259",
+     "g": "s"
+    },
+    {
+     "pmid": "41874448",
+     "g": "s"
+    },
+    {
+     "pmid": "42084223",
+     "g": "s"
+    },
+    {
+     "pmid": "42957952",
+     "g": "s"
+    },
+    {
+     "pmid": "42957737",
+     "g": "p"
+    },
+    {
+     "pmid": "42637517",
+     "g": "p"
+    },
+    {
+     "pmid": "42830144",
+     "g": "p"
+    },
+    {
+     "pmid": "42998044",
+     "g": "o"
+    }
+   ]
+  }
+ }
+}
