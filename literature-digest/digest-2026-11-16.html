@@ -1,0 +1,82 @@
+<title>Marrow Digest 16 Nov</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+<style>
+/* Layout: masthead + filter chips + single reading column of paper cards; slide-stain palette (hematoxylin / eosin) */
+:root{
+  --bg:#f3f3f7; --surface:#ffffff; --fg:#1d1b2b; --muted:#5d5a72; --line:#dcdbe6;
+  --hema:#4a3f8f; --hema-soft:#e8e5f6; --eosin:#b83a6e; --eosin-soft:#f8e4ec; --ok:#1f7a5a;
+  --serif:"Source Serif 4",Georgia,serif; --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14131d; --surface:#1d1c2a; --fg:#ecebf5; --muted:#a6a3bd; --line:#34324a;
+  --hema:#a99cf0; --hema-soft:#2c2850; --eosin:#f08ab3; --eosin-soft:#44212f; --ok:#5fd0a5; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#14131d; --surface:#1d1c2a; --fg:#ecebf5; --muted:#a6a3bd; --line:#34324a;
+  --hema:#a99cf0; --hema-soft:#2c2850; --eosin:#f08ab3; --eosin-soft:#44212f; --ok:#5fd0a5; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.6;padding-inline:16px;padding-block:32px 64px}
+.wrap{max-width:820px;margin-inline:auto;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:10px;border-bottom:2px solid var(--hema);padding-bottom:20px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--eosin)}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,6vw,44px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{color:var(--muted);margin:0;max-width:65ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 13px var(--sans);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--hema);border-color:var(--hema);color:var(--surface)}
+.chip:focus-visible,a:focus-visible{outline:2px solid var(--eosin);outline-offset:2px}
+.group{display:flex;flex-direction:column;gap:14px}
+.group h2{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:500}
+article{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.tag{background:var(--hema-soft);color:var(--hema);padding:2px 8px;border-radius:3px;font-weight:500}
+.tag.pre{background:var(--eosin-soft);color:var(--eosin)}
+.rel{display:inline-flex;gap:3px;align-items:center}
+.rel i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.rel i.on{background:var(--eosin)}
+h3{font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.25;margin:0;text-wrap:balance}
+.sum{margin:0;max-width:65ch}
+h4{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--hema);margin:0 0 6px;font-weight:500}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:5px;max-width:65ch}
+li::marker{color:var(--eosin)}
+.why{background:var(--hema-soft);border-radius:4px;padding:10px 12px;font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--mono);font-size:12px}
+a{color:var(--hema)}
+footer{color:var(--muted);font-size:12px;font-family:var(--mono)}
+@media(max-width:480px){article{padding:16px}}
+</style>
+<div class="wrap">
+<header>
+  <div class="kicker" id="kick">Digest · 16 Nov 2026</div>
+  <h1>Marrow Digest</h1>
+  <p class="lede">Ten papers: CODEX niches and spatial-analysis methods, JMML macrophages and pediatric AML epitypes, stromal suppression of NK cells in MDS, and immune mechanisms of HMA and venetoclax response.</p>
+  <div class="chips" id="chips" role="group" aria-label="Filter by topic"></div>
+</header>
+<main id="main" class="wrap" style="gap:28px"></main>
+<footer>PubMed, entries 8–16 Nov 2026. Preprints are not peer reviewed.</footer>
+</div>
+<script>
+const G={"s": "Spatial proteomics and imaging", "p": "Pediatric AML, MDS and JMML", "n": "AML microenvironment and mouse models", "o": "MDS and related disorders"};
+const P=[{"j": "Cancers · Oct 2026", "t": "A lymphoid-enriched spatial immune niche defines an immunotherapy-responsive state in hepatocellular carcinoma", "rel": 3, "tag": "Original research", "sum": "Integration of scRNA-seq (100 samples), spatial transcriptomics, 51-plex CODEX and bulk cohorts in hepatocellular carcinoma treated with atezolizumab plus bevacizumab.", "f": ["Nine spatial niches were defined; Niche 9 is lymphoid-rich (B, plasma, NK, T cells, macrophages, TLS-like features).", "Niche 9 activity is enriched in immunotherapy responders, and co-registered CODEX confirms its immune composition at the protein level.", "A nine-gene Niche 9 signature predicted response and better outcome in independent cohorts."], "why": "A worked example of using CODEX to validate spatial niches and link them to therapy response.", "doi": "10.3390/cancers18213442", "pmid": "43026764", "g": "s"}, {"j": "bioRxiv · Oct 2026", "t": "Cellular proximity and conditional coordination in the colorectal and pancreatic tumor microenvironment: a patient-level analysis of multiplexed imaging", "rel": 3, "tag": "Preprint · methods", "sum": "Statistical framework separating proximity, recurrent neighborhoods and conditional co-variation of cell types, applied to 140 CODEX images (35 colorectal cancer patients) and 207 multiplex IF images (pancreas).", "f": ["Proximity and conditional association can disagree, because cell-dense regions inflate all types and images from one patient are not independent.", "In colorectal cancer, epithelial–myeloid conditional association differed between inflammatory subtypes with no proximity difference.", "Recurrent neighborhoods best predicted patient groups (AUC 0.79); available as the R package spatialMIFtools."], "why": "Practical guidance for analyzing CODEX data at the patient level, directly relevant to your downstream statistics.", "doi": "10.64898/2026.10.08.757632", "pmid": "42999117", "g": "s"}, {"j": "Nature Cancer · Nov 2026", "t": "The deep learning framework Hist2Prot infers single-cell spatial proteomics from histology to predict biomarkers and clinical outcomes", "rel": 3, "tag": "Methods", "sum": "Deep learning model trained on ~51 million cells with same-section H&E and G4X spatial proteomics to predict protein profiles from routine histology.", "f": ["Predicted single-cell protein profiles match measured ones in internal, same-platform and cross-platform cohorts (~72 million extra cells).", "Virtual proteins preserve immune, stromal and tumor phenotypes and tissue organization.", "Across 1,774 patients in seven cohorts, virtual spatial proteomics improved biomarker, prognosis and immunotherapy-response prediction over H&E alone."], "why": "Solid tumors only, but shows how spatial proteomics could be extended to large archival H&E cohorts for outcome correlation.", "doi": "10.1038/s43018-026-01270-8", "pmid": "43026320", "g": "s"}, {"j": "Br J Haematol · Nov 2026", "t": "Phagocytosis activity is retained by JMML macrophages and increased by CD47 inhibition", "rel": 4, "tag": "Original research", "sum": "Human JMML spleens, Mx-Cre;Ptpn11 mutant mice and a patient-derived xenograft used to study clonal macrophages and CD47 in juvenile myelomonocytic leukemia.", "f": ["PTPN11-mutant JMML spleens have more M1-like macrophages than KRAS-mutant cases or controls.", "Clonal JMML macrophages stay phagocytic (M1-like most active); CD47 is up on JMML cells and blocking it boosts phagocytosis in vitro.", "In the PDX model, magrolimab lowered leukemia burden in spleen but not bone marrow, with no synergy with azacitidine."], "why": "Pediatric myeloid neoplasm, tissue macrophage phenotyping plus a mouse model; the spleen-vs-marrow gap points to a protective marrow niche.", "doi": "10.1111/bjh.70871", "pmid": "43001447", "g": "p"}, {"j": "iScience · Nov 2026", "t": "Integrated multi-omics reveals methylation-linked biological heterogeneity in intermediate-risk pediatric acute myeloid leukemia", "rel": 4, "tag": "Original research", "sum": "DNA methylation, whole-exome and transcriptome profiling of intermediate-risk pediatric AML, with projection onto an independent pediatric cohort.", "f": ["Methylation clustering defines three epitypes: E1 inflammatory/stress-response, E2 proliferative, E3 developmental with global hypomethylation.", "Different mutations converge on the same pathways within each epitype; immune activation agrees across epigenetic and transcriptomic layers.", "E1 has worse survival than E2 and E3; the methylation programs are partly conserved in the validation cohort."], "why": "A candidate stratifier for the intermediate-risk group, where outcome correlation of your spatial data may be most informative.", "doi": "10.1016/j.isci.2026.118028", "pmid": "43022221", "g": "p"}, {"j": "Ann Hematol · Aug 2026", "t": "Advances in CBFA2T3::GLIS2 fusion gene in pediatric acute myeloid leukemia: from molecular mechanisms to targeted therapeutic strategies", "rel": 3, "tag": "Review", "sum": "Review of the CBFA2T3::GLIS2 fusion, the most common alteration in non-Down syndrome acute megakaryoblastic leukemia in children.", "f": ["The fusion comes from a cryptic chr16 inversion; CBFA2T3 exon 11–GLIS2 exon 3 is the main transcript.", "It is linked to chemoresistance and poor outcome, and also occurs in cytogenetically normal AML subtypes beyond AMKL.", "Covers leukemogenic mechanisms and emerging targeted therapies."], "why": "Background on a high-risk pediatric AML subtype you are likely to meet in your cohort.", "doi": "10.1007/s00277-026-07227-2", "pmid": "43004022", "g": "p"}, {"j": "Leukemia · Nov 2026", "t": "Mesenchymal stromal cells drive immune escape in MDS and sAML through metabolic rewiring of NK cells", "rel": 5, "tag": "Original research", "sum": "Paired ATAC-seq and RNA-seq of NK cells co-cultured with mesenchymal stromal cells (MSCs) from MDS and secondary AML patients versus healthy donors.", "f": ["MDS/sAML MSCs remodel NK-cell chromatin, closing promoters of genes for stress response and survival.", "Healthy MSCs protect NK cells; diseased MSCs lose this support and instead cause mitochondrial fragmentation and NK apoptosis.", "The net effect is lower NK cytotoxicity against leukemia, suggesting mitochondria-protective strategies to restore immune surveillance."], "why": "A direct stroma–immune cell interaction in the MDS marrow; MSC–NK proximity is something CODEX can measure in your pediatric samples.", "doi": "10.1038/s41375-026-03172-1", "pmid": "43003869", "g": "n"}, {"j": "HemaSphere · Nov 2026", "t": "Modulation of the RNA-sensing RIG/MAVS pathway bypasses resistance to hypomethylating agents in acute myeloid leukemia", "rel": 4, "tag": "Original research", "sum": "Human and murine AML lines, mouse AML models with RIG-I or MAVS knockout, and a small patient series examine how HMAs trigger antileukemic immunity.", "f": ["Azacitidine re-activates endogenous retroviruses whose RNA binds RIG-I, driving MAVS signaling and type I interferon release.", "Deleting RIG-I or MAVS in AML cells abolished HMA efficacy in mice by blocking host interferon signaling and T-cell expansion.", "HMA resistance came with ERV silencing; ATRA restored RIG-I signaling and response in resistant AML in mice."], "why": "Links therapy response to the marrow immune compartment, with a mouse model design relevant to your functional validation aim.", "doi": "10.1002/hem3.70523", "pmid": "43017577", "g": "n"}, {"j": "Curr Cancer Drug Targets · Nov 2026", "t": "Two immune states in venetoclax-resistant AML: antigen-presentation silencing and checkpoint exhaustion", "rel": 3, "tag": "Original research", "sum": "Computational analysis of 367 BeatAML patients with ex vivo venetoclax response and RNA-seq, validated with TCGA-LAML methylation data.", "f": ["Venetoclax resistance splits into an immune-cold state (low antigen presentation, low checkpoints) and a checkpoint-high, T-cell-infiltrated state.", "The cold state shows promoter hypermethylation of MHC class I/II and checkpoint genes, independent of NPM1 status.", "PD-L1 testing alone would misread the cold state; antigen-presentation methylation is proposed as a biomarker. Findings are correlative."], "why": "Adult cohort and bulk data, but the two immune states are testable hypotheses for spatial immune phenotyping and therapy response.", "doi": "10.2174/0115680096543389261110065041", "pmid": "43023442", "g": "n"}, {"j": "Front Cell Dev Biol · Oct 2026", "t": "AI-assisted single-cell transcriptomics defines immunosuppressive ecosystem states and CD274-centered communication networks in myelodysplastic syndrome", "rel": 2, "tag": "Original research", "sum": "Reanalysis of public MDS bone marrow scRNA-seq against a healthy reference, with cell-line validation of immune regulatory genes.", "f": ["Eleven immune states; MDS shifts T/NK cells toward cytotoxic and exhaustion-like programs.", "CD274 (PD-L1)-high cells carry TGF-β and checkpoint programs, alongside TGFB1, LGALS9–HAVCR2 and IL10 communication axes.", "Cell-line validation is limited and inconsistent; the authors call it hypothesis-generating."], "why": "Lists candidate MDS immune checkpoints to consider for a CODEX panel; evidence is weak.", "doi": "10.3389/fcell.2026.1897026", "pmid": "43031997", "g": "o"}];
+const main=document.getElementById('main'),chips=document.getElementById('chips');
+let cur='all';
+function render(){
+  main.innerHTML='';
+  for(const k of Object.keys(G)){
+    if(cur!=='all'&&cur!==k)continue;
+    const items=P.filter(p=>p.g===k); if(!items.length)continue;
+    const sec=document.createElement('section');sec.className='group';
+    sec.innerHTML='<h2>'+G[k]+' ('+items.length+')</h2>';
+    for(const p of items){
+      const a=document.createElement('article');
+      a.innerHTML='<div class="meta"><span class="tag'+(p.pre?' pre':'')+'">'+p.tag+'</span><span>'+p.j+'</span><span class="rel" title="Relevance to your project: '+p.rel+' of 5" aria-label="Relevance '+p.rel+' of 5">'+[1,2,3,4,5].map(i=>'<i class="'+(i<=p.rel?'on':'')+'"></i>').join('')+'</span></div>'+
+      '<h3>'+p.t+'</h3><p class="sum">'+p.sum+'</p><div><h4>Main findings</h4><ul>'+p.f.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>'+
+      '<div class="why"><strong>Why it matters for you:</strong> '+p.why+'</div>'+
+      '<div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/'+p.pmid+'/" target="_blank" rel="noopener">PMID '+p.pmid+'</a><a href="https://doi.org/'+p.doi+'" target="_blank" rel="noopener">DOI '+p.doi+'</a></div>';
+      sec.appendChild(a);
+    }
+    main.appendChild(sec);
+  }
+}
+function mk(k,l){const b=document.createElement('button');b.className='chip';b.type='button';b.textContent=l;b.setAttribute('aria-pressed',k===cur);b.onclick=()=>{cur=k;[...chips.children].forEach(c=>c.setAttribute('aria-pressed',c===b));render()};chips.appendChild(b)}
+mk('all','All '+P.length);for(const k in G)mk(k,G[k]);
+render();
+</script>

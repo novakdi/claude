@@ -222,6 +222,66 @@
       "doi": "10.1002/ajh.70542",
       "title": "Distinct Consequences of BCOR and BCORL1 Mutations in Myeloid Neoplasms and Bone Marrow Failure",
       "sent_date": "2026-11-09"
+    },
+    {
+      "pmid": "43003869",
+      "doi": "10.1038/s41375-026-03172-1",
+      "title": "Mesenchymal stromal cells drive immune escape in MDS and sAML through metabolic rewiring of NK cells",
+      "sent_date": "2026-11-16"
+    },
+    {
+      "pmid": "43001447",
+      "doi": "10.1111/bjh.70871",
+      "title": "Phagocytosis activity is retained by JMML macrophages and increased by CD47 inhibition",
+      "sent_date": "2026-11-16"
+    },
+    {
+      "pmid": "43022221",
+      "doi": "10.1016/j.isci.2026.118028",
+      "title": "Integrated multi-omics reveals methylation-linked biological heterogeneity in intermediate-risk pediatric acute myeloid leukemia",
+      "sent_date": "2026-11-16"
+    },
+    {
+      "pmid": "43017577",
+      "doi": "10.1002/hem3.70523",
+      "title": "Modulation of the RNA-sensing RIG/MAVS pathway bypasses resistance to hypomethylating agents in acute myeloid leukemia",
+      "sent_date": "2026-11-16"
+    },
+    {
+      "pmid": "43023442",
+      "doi": "10.2174/0115680096543389261110065041",
+      "title": "Two immune states in venetoclax-resistant AML: antigen-presentation silencing and checkpoint exhaustion",
+      "sent_date": "2026-11-16"
+    },
+    {
+      "pmid": "43026320",
+      "doi": "10.1038/s43018-026-01270-8",
+      "title": "The deep learning framework Hist2Prot infers single-cell spatial proteomics from histology to predict biomarkers and clinical outcomes",
+      "sent_date": "2026-11-16"
+    },
+    {
+      "pmid": "43026764",
+      "doi": "10.3390/cancers18213442",
+      "title": "A lymphoid-enriched spatial immune niche defines an immunotherapy-responsive state in hepatocellular carcinoma",
+      "sent_date": "2026-11-16"
+    },
+    {
+      "pmid": "42999117",
+      "doi": "10.64898/2026.10.08.757632",
+      "title": "Cellular proximity and conditional coordination in the colorectal and pancreatic tumor microenvironment: a patient-level analysis of multiplexed imaging",
+      "sent_date": "2026-11-16"
+    },
+    {
+      "pmid": "43004022",
+      "doi": "10.1007/s00277-026-07227-2",
+      "title": "Advances in CBFA2T3::GLIS2 fusion gene in pediatric acute myeloid leukemia: from molecular mechanisms to targeted therapeutic strategies",
+      "sent_date": "2026-11-16"
+    },
+    {
+      "pmid": "43031997",
+      "doi": "10.3389/fcell.2026.1897026",
+      "title": "AI-assisted single-cell transcriptomics defines immunosuppressive ecosystem states and CD274-centered communication networks in myelodysplastic syndrome",
+      "sent_date": "2026-11-16"
     }
   ]
 }
